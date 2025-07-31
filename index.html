@@ -7,7 +7,55 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <h1>Simple Counter & Color Changer App</h1>
+            <p>Final Exam</p>
+        </header>
+
+        <main>
+            
+            <section class="counter-section">
+                <h2>Click Counter</h2>
+                <div class="counter-display">
+                    <p id="counter-value">0</p>
+                </div>
+                <button id="increment-btn" class="btn">+</button>
+                <button id="decrement-btn" class="btn">-</button>
+                
+                <!-- Click Tracking Display -->
+                <div class="click-tracking">
+                    <p>Total button clicks: <span id="total-clicks">0</span></p>
+                </div>
+            </section>
+
+           
+            <section class="color-section">
+                <h2>Color Box</h2>
+                <div id="color-box" class="color-box"></div>
+                <button id="change-color-btn" class="btn">Change Color</button>
+                
+                <!-- Animation Controls -->
+                <div class="animation-controls">
+                    <label>
+                        <input type="checkbox" id="animation-toggle" checked>
+                        Enable Animations
+                    </label>
+                </div>
+            </section>
+
+            
+            <section class="quote-section">
+                <h2>Motivational Quote</h2>
+                <div id="quote-display" class="quote-display">
+                    <p id="quote-text">Click the button to show a random quote!</p>
+                </div>
+                <button id="quote-btn" class="btn">Show Random Quote</button>
+            </section>
+        </main>
+
+        
+    </div>
 
     <script src="script.js"></script>
 </body>
